@@ -1,0 +1,16 @@
+{
+  "CN": "cloudgeeks.ca",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "CA",
+      "L": "CA",
+      "O": "cloudgeeks",
+      "OU": "IT",
+      "ST": "CA"
+    }
+  ]
+}
