@@ -1,6 +1,6 @@
 {
   "CN": "*.cloudgeeks.ca",
-  "hosts": ["cloudgeeks.ca", "www.cloudgeeks.ca"],
+  "hosts": ["cloudgeeks.ca", "*.cloudgeeks.ca"],
   "key": {
     "algo": "rsa",
     "size": 2048
