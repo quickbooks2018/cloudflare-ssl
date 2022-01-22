@@ -12,7 +12,9 @@ curl -Lo cfssljson https://github.com/cloudflare/cfssl/releases/download/v1.6.1/
 ca-config.json
 ca-csr.json
 
+```bash
 cfssl gencert -initca ca-csr.json | cfssljson -bare ca
+```
 
 # Certificate Signining Request CSR
 cfssl gencert \
@@ -23,4 +25,7 @@ cfssl gencert \
 cloudgeeks.ca-csr.json | cfssljson -bare cloudgeeks.ca
 
 # Decode
+- openssl
+```bash
 openssl x509 -in cloudgeeks.ca.pem -text -noout
+```
