@@ -17,12 +17,14 @@ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 ```
 
 # Certificate Signining Request CSR
+```bash
 cfssl gencert \
 -ca=ca.pem \
 -ca-key=ca-key.pem \
 -config=ca-config.json \
 -profile=tls \
 cloudgeeks.ca-csr.json | cfssljson -bare cloudgeeks.ca
+```
 
 # Decode
 - openssl
